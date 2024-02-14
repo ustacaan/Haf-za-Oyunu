@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">    
+    
+    <link rel="stylesheet" href="/main.css">
+    <script type="module" src="/main.js" defer></script>
+  </head>
+  <body>
+    <h1 class="page-title">Memory Card Matching
+    </h1>
+
+    <div class="overlay-text visible" data-game-start>
+      <span data-game-start-text>Click to Start</span>
+        <form class="name-form" data-name-form>
+          <p>Your Name:</p> <input type="text" class="input-name" data-name-input>
+          <button class="btn">Enter</button>
+        </form>
+    </div>
+
+    <div class="overlay-text" data-game-over-text>
+      GAME OVER
+      <span class="overlay-text-small" data-game-restart>
+        Click to Restart
+      </span>
+    </div>
+
+    <div class="overlay-text" data-victory-text>
+      VICTORY
+      <span class="overlay-text-small" data-game-restart>
+        Click to Restart
+      </span>
+    </div>
+    <div class="game-container">
+      <div class="game-info-container">
+        <div class="game-info">
+          Player Name: <strong><span data-player-name></span> </strong>
+        </div>
+        <div class="game-info">
+          Flips <span data-flips></span>
+        </div>
+        <div class="game-info">
+          Last Score: <strong><span data-player-score></span> </strong>
+        </div>
+        <div class="game-info">
+          Time <span data-time-remaining></span>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/cherry.svg" alt="">
+          </div>
+        </div>
+
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/cherry.svg" alt="">
+          </div>
+        </div>
+
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/flower.svg" alt="">
+          </div>
+        </div>
+
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front visible">
+            <img src="/icons/flower.svg" alt="">
+          </div>
+        </div>
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/leon.svg" alt="">
+          </div>
+        </div>
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/leon.svg" alt="">
+          </div>
+        </div>
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/piano.svg" alt="">
+          </div>
+        </div>
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/piano.svg" alt="">
+          </div>
+        </div>
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/shark.svg" alt="">
+          </div>
+        </div>
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/shark.svg" alt="">
+          </div>
+        </div>
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/world.svg" alt="">
+          </div>
+        </div>
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/world.svg" alt="">
+          </div>
+        </div>
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/gift.svg" alt="">
+          </div>
+        </div>
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/gift.svg" alt="">
+          </div>
+        </div>
+
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/smile02.svg" alt="">
+          </div>
+        </div>
+        <div class="card visible">
+          <div class="card-back none">
+            <img src="/icons/background.png" alt="">
+          </div>
+          <div class="card-front">
+            <img src="/icons/smile02.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
